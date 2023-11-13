@@ -170,7 +170,7 @@ img.logo {
 }
 
 .primary-button {
-  background-color: rgb(106, 191, 244);
+  background-color: #42B4EE;
   color: white;
   display: inline-flex;
   padding: 0.9375rem 1.875rem;
@@ -238,7 +238,6 @@ img.logo {
 
 /* Customer Section */
 .customer-section {
-  border: 1px solid red;
   padding: 5rem 0;
 }
 .customer-section h2 {
@@ -253,23 +252,20 @@ img.logo {
 .card {
   text-align: center;
   width: 16.6rem;
-  
 }
 
-
 .card-group {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card img {
   margin: 0 auto;
 }
 .card-body {
-  
   padding: 2rem 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .card-title {
   color: black;
@@ -291,6 +287,17 @@ img.logo {
   font-weight: 400;
   line-height: 160%; /* 1.4rem */
   width: 13.3125rem;
-  margin:  0 auto;
+  margin: 0 auto;
   padding: 1rem 0;
+}
+
+/* Pricing Plan Section */
+
+.pricing-section h2 {
+  color: var(--Black, #051114);
+  text-align: center;
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
 }
