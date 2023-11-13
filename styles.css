@@ -13,6 +13,10 @@
 * {
   margin: 0;
 }
+
+li{
+    list-style: none;
+}
 /*
   Typographic tweaks!
   3. Add accessible line-height
@@ -170,7 +174,7 @@ img.logo {
 }
 
 .primary-button {
-  background-color: #42B4EE;
+  background-color: #42b4ee;
   color: white;
   display: inline-flex;
   padding: 0.9375rem 1.875rem;
@@ -179,6 +183,23 @@ img.logo {
   gap: 0.625rem;
   border-radius: 0.3125rem;
 }
+
+
+.secondary-button {
+  color: #42b4ee;
+  display: inline-flex;
+  padding: 0.9375rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.3125rem;
+}
+
+.secondary-button:hover{
+  background-color: #42b4ee;
+  color: white;
+}
+
 
 /* Feature Section */
 
@@ -300,4 +321,114 @@ img.logo {
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
+}
+
+.toggle-container {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+/** Switch
+ -------------------------------------*/
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+/**
+ * 1. Adjust this to size
+ */
+
+.switch {
+  display: inline-block;
+  font-size: 20px; /* 1 */
+  height: 1em;
+  width: 2em;
+  background: #42b4ee;
+  border-radius: 1em;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #fff;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.switch input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.payment-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  width: 30%;
+}
+
+.monthly {
+  color: var(--Black, #051114);
+  text-align: center;
+
+  /* Subheading / Base */
+  font-family: Inter;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 2.0625rem */
+}
+
+.yearly {
+  color: var(--Black, #051114);
+  text-align: center;
+  /* Subheading / Base */
+  font-family: Inter;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 2.0625rem */
+}
+
+/* Prcing Card Styles*/
+
+h6 {
+  color: var(--Black, #051114);
+  text-align: center;
+
+  /* Subheading / Base */
+  font-family: Inter;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 2.0625rem */
+}
+
+.card-title {
+  color: var(--Black, #051114);
+  text-align: center;
+
+  /* Subtitle / Base */
+  font-family: Inter;
+  font-size: 1.57rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 3.575rem */
+}
+
+.card-text li {
+  margin: 1rem 0;
 }
