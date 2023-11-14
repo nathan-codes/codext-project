@@ -194,8 +194,11 @@ background: rgba(66, 180, 238, 0.10);
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
+  margin-bottom: 2rem;
 
 }
+
+
 
 .secondary-button:hover {
   background-color: #42b4ee;
@@ -227,6 +230,7 @@ background: rgba(66, 180, 238, 0.10);
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 3.575rem */
+  margin-top: 5rem;
   
 }
 
@@ -240,7 +244,7 @@ background: rgba(66, 180, 238, 0.10);
 
 .feature-header h3 {
   padding-left: 1rem;
-  color: var(--Black, #051114);
+
   font-family: Inter;
   font-size: 1.5625rem;
   font-style: normal;
@@ -263,23 +267,46 @@ background: rgba(66, 180, 238, 0.10);
   padding: 5rem 0;
 }
 .customer-section h2 {
-  color: var(--Black, #051114);
+
   text-align: center;
   font-size: 2.75rem;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
   padding-bottom: 2rem;
+  margin-top: 7rem;
 }
 
 .card {
-  padding: 2rem;
+  padding: 0;
   text-align: center;
   margin: 0 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
   width: 100%;
+  transition: all 2s ease;
+  color: black;
 }
+
+
+.curly-hover:hover{
+  background-image: url(/assets/Rectangle\ 61\ \(1\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
+  transition: all 1s ease;
+  
+}
+
+.card-img-top {
+  padding: 1.5rem;
+}
+
+.card-body{
+  transition: all 2s ease;
+}
+
 
 .card-group {
   display: flex;
@@ -296,7 +323,7 @@ background: rgba(66, 180, 238, 0.10);
   border-bottom-right-radius: 10px;
 }
 .card-title {
-  color: black;
+
   text-align: center;
   font-family: Inter;
   font-size: 1.5625rem;
@@ -307,7 +334,7 @@ background: rgba(66, 180, 238, 0.10);
 }
 
 .card-text {
-  color: black;
+ 
   text-align: center;
   font-family: Inter;
   font-size: 0.875rem;
@@ -328,6 +355,7 @@ background: rgba(66, 180, 238, 0.10);
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
+  margin-top: 5rem;
   
 }
 
@@ -388,6 +416,21 @@ background: rgba(66, 180, 238, 0.10);
   width: 30%;
 }
 
+.card-top{
+  padding: 4rem;
+  transition: all 1s ease;
+}
+
+.card-top:hover {
+  background-image: url(/assets/Vector\ 5.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+  
+  
+}
+
 .monthly {
   color: var(--Black, #051114);
   text-align: center;
@@ -414,7 +457,7 @@ background: rgba(66, 180, 238, 0.10);
 /* Prcing Card Styles*/
 
 h6 {
-  color: var(--Black, #051114);
+
   text-align: center;
 
   /* Subheading / Base */
@@ -426,12 +469,12 @@ h6 {
 }
 
 .card-title {
-  color: var(--Black, #051114);
+
   text-align: center;
 
   /* Subtitle / Base */
   font-family: Inter;
-  font-size: 1.57rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 3.575rem */
@@ -452,6 +495,7 @@ h6 {
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 3.575rem */
+  margin-top: 10rem ;
 }
 
 .review-section {
@@ -480,15 +524,23 @@ h6.user-name {
   line-height: 160%; /* 2rem */
 }
 
+.comment-card {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+padding: 2rem;
+margin-bottom: 2rem;}
+
 p.comments {
   text-align: start;
   color: var(--Black, #051114);
   font-family: Inter;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 500;
-  line-height: 160%; /* 1.2rem */
-  width: 12.5rem;
+  line-height: 140%; /* 1.2rem */
+  width: 15rem;
+
+  
 }
 
 p.position {
@@ -506,6 +558,7 @@ p.position {
   justify-content: center;
   align-items: center;
   width: 80%;
+
 }
 
 /* News Section  */
@@ -520,6 +573,7 @@ p.position {
   font-style: normal;
   font-weight: 600;
   line-height: 130%; /* 3.575rem */
+  margin-top: 10rem;
 }
 
 .news-section {
@@ -576,18 +630,19 @@ p.news-text {
 /* Styling the footer section */
 
 footer {
-  background-color: #060e1a;
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 24rem;
-  padding: 0 15rem;
+  height: 23rem;
+  padding: 2rem 10rem;
   color: white;
 }
 
 footer div {
-  padding: 1rem 1rem;
-  width: 23%;
+  
+  padding: 0rem 1rem;
+  width: 35%;
 }
 
 .social-text {
@@ -622,7 +677,24 @@ footer div {
   padding: 0.5rem 0;
   line-height: 160%; /* 1.8rem */
 }
+ ul {
+  padding-left: 0;
+} 
+.social-links  li a {
+  text-decoration: none;
+  color: white;
+  padding:1rem;
+  border-radius: 100%; 
+  border: 1px solid rgb(43, 42, 42);
+}
 
+.social-links {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+
+  
+}
 /* Email newsletter form */
 
 .input-group {
@@ -648,15 +720,15 @@ footer div {
 }
 
 hr {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   opacity: 0.2;
   background: #fff;
 }
 
 .footer-copyright {
   margin: 0;
-  padding: 2rem 15rem;
-  background-color: #060e1a;
+  padding: 1rem 15rem;
+  background-color: black;
   color: #fff;
   text-align: center;
   font-family: Inter;
@@ -664,4 +736,9 @@ hr {
   font-style: normal;
   font-weight: 500;
   line-height: 160%; /* 1.8rem */
+}
+
+
+.footer-logo{
+  width: 50%;
 }
